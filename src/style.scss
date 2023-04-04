@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Roboto:wght@400;500;900&display=swap');
+@import "lib/lazy.scss";
+
+.flx-accordion-section {
+	font-family: 'Roboto', sans-serif;
+	border-radius: 16px;
+	padding: 40px 20px;
+	background-image: linear-gradient(158deg, #ebf5ff, #f7fbff);
+
+	@media screen and (min-width: 769px) {
+		padding: 70px 80px;
+	}
+
+	&__title {
+		font-family: 'Lato', sans-serif;
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 1.2;
+		letter-spacing: 0.01em;
+		margin: 0 0 24px 0;
+
+		@media screen and (min-width: 769px) {
+			margin: 0 0 48px 0;
+			font-size: 32px;
+		}
+	}
+
+	img {
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.flx-accordion {
+	&__item {
+		margin-bottom: 8px;
+		overflow: hidden;
+		border-bottom: 1px solid #b3d9ff;
+		transition: color .3s ease-in-out, background-color .3s ease-in-out, border-radius .3s ease-in-out;
+
+		&.show {
+			border-radius: 8px;
+			background-color: #ffffff;
+			border-color: #ffffff;
+			transition: color .3s ease-in-out, background-color .3s ease-in-out, border-radius .3s ease-in-out;
+		}
+	}
+
+	&__header {
+		font-size: 19px;
+		font-weight: 500;
+		margin: 0;
+		color: #285FBB;
+	}
+
+	&__button {
+		display: flex;
+		justify-content: space-between;
+		font-family: inherit;
+		font-size: inherit;
+		color: inherit;
+		font-weight: inherit;
+		width: 100%;
+		background-color: transparent;
+		border: none;
+		box-shadow: none;
+		cursor: pointer;
+		padding: 16px;
+		transition: color .3s ease-in-out, background-color .3s ease-in-out;
+
+		> span {
+			display: inline-block;
+			text-align: left;
+			padding-right: 10px;
+			transition: transform .3s ease-in-out;
+		}
+
+		&[aria-expanded='true'] {
+			color: #0A2344;
+
+			> span {
+				transform: translateX(16px);
+			}
+
+			&::after {
+				transform: rotate(135deg);
+			}
+		}
+
+		&:hover,
+		&:focus {
+			background-color: rgba(#ffffff, 0.6);
+		}
+
+		&::after {
+			display: inline-block;
+			flex-shrink: 0;
+			content: "";
+			height: 24px;
+			width: 24px;
+			border-radius: 50%;
+			border: 2px solid #458EF7;
+			background-image: url("data:image/svg+xml,%3Csvg width='10px' height='10px' viewBox='0 0 10 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Eicon-plus%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Test-assignment' transform='translate(-1091.000000, -779.000000)' fill='%23458EF7'%3E%3Cg id='accordion' transform='translate(248.000000, 133.000000)'%3E%3Cg id='2' transform='translate(64.000000, 619.000000)'%3E%3Cg id='icon' transform='translate(768.000000, 16.000000)'%3E%3Cg id='expand' transform='translate(11.000000, 11.000000)'%3E%3Cpath d='M9,6 L6,6 L6,6 L6,9 C6,9.55228475 5.55228475,10 5,10 C4.44771525,10 4,9.55228475 4,9 L4,6 L4,6 L1,6 C0.44771525,6 6.76353751e-17,5.55228475 0,5 C-6.76353751e-17,4.44771525 0.44771525,4 1,4 L4,4 L4,4 L4,1 C4,0.44771525 4.44771525,1.01453063e-16 5,0 C5.55228475,-1.01453063e-16 6,0.44771525 6,1 L6,4 L6,4 L9,4 C9.55228475,4 10,4.44771525 10,5 C10,5.55228475 9.55228475,6 9,6 Z' id='solid'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+			background-size: 11px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			transition: transform .3s ease-in-out;
+
+		}
+	}
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+		margin: 0 -20px;
+
+		@media screen and (min-width: 769px) {
+			flex-direction: row;
+		}
+	}
+
+	&__col {
+		padding: 0 20px;
+		flex: 1 1;
+
+		& + .flx-accordion__col {
+			@media screen and (max-width: 769px) {
+				margin-top: 16px;
+			}
+		}
+	}
+
+	&__body {
+		color: #3D5266;
+		font-size: 16px;
+		letter-spacing: 0.24px;
+		line-height: 1.6;
+		padding: 16px;
+
+		@media screen and (min-width: 769px) {
+			padding: 32px;
+		}
+
+		p {
+			margin: 0 0 16px 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__collapse {
+		height: 0;
+		transition: height .3s ease-in-out;
+
+		&.show {
+			transition: height .3s ease-in-out;
+		}
+	}
+}

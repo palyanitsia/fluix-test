@@ -1,0 +1,28 @@
+{
+  "name": "flx-accordion",
+  "version": "0.1.0",
+  "description": "Example block scaffolded with Create Block tool.",
+  "author": "The WordPress Contributors",
+  "license": "GPL-2.0-or-later",
+  "main": "build/index.js",
+  "scripts": {
+	"build": "wp-scripts build src/index.js src/autoload.js",
+	"format": "wp-scripts format",
+	"lint:css": "wp-scripts lint-style",
+	"lint:js": "wp-scripts lint-js",
+	"packages-update": "wp-scripts packages-update",
+	"plugin-zip": "wp-scripts plugin-zip",
+	"start": "wp-scripts start src/index.js src/autoload.js"
+  },
+  "devDependencies": {
+	"@wordpress/scripts": "^26.0.0"
+  },
+  "dependencies": {
+	"@wordpress/block-editor": "^11.6.0",
+	"@wordpress/blocks": "^12.6.0",
+	"@wordpress/components": "^23.7.0",
+	"@wordpress/element": "^5.7.0",
+	"@wordpress/i18n": "^4.29.0",
+	"uuid": "^9.0.0"
+  }
+}

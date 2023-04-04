@@ -1,0 +1,166 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Roboto:wght@400;500;900&display=swap);
+/*!*******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss (1) ***!
+  \*******************************************************************************************************************************************************************************************************************************************/
+.lazy {
+  filter: opacity(0.5) blur(0.25rem);
+  transition: none;
+}
+.lazy--finished {
+  filter: none;
+  transition: none;
+}
+.lazy--animated {
+  filter: opacity(1) blur(0);
+  transition: filter 300ms ease;
+}
+.lazy--loaded {
+  filter: opacity(0.5) blur(0.25rem);
+  transition: filter 300ms ease;
+}
+
+.flx-accordion-section {
+  font-family: "Roboto", sans-serif;
+  border-radius: 16px;
+  padding: 40px 20px;
+  background-image: linear-gradient(158deg, #ebf5ff, #f7fbff);
+}
+@media screen and (min-width: 769px) {
+  .flx-accordion-section {
+    padding: 70px 80px;
+  }
+}
+.flx-accordion-section__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin: 0 0 24px 0;
+}
+@media screen and (min-width: 769px) {
+  .flx-accordion-section__title {
+    margin: 0 0 48px 0;
+    font-size: 32px;
+  }
+}
+.flx-accordion-section img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.flx-accordion__item {
+  margin-bottom: 8px;
+  overflow: hidden;
+  border-bottom: 1px solid #b3d9ff;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+.flx-accordion__item.show {
+  border-radius: 8px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+.flx-accordion__header {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0;
+  color: #285FBB;
+}
+.flx-accordion__button {
+  display: flex;
+  justify-content: space-between;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 16px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.flx-accordion__button > span {
+  display: inline-block;
+  text-align: left;
+  padding-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.flx-accordion__button[aria-expanded=true] {
+  color: #0A2344;
+}
+.flx-accordion__button[aria-expanded=true] > span {
+  transform: translateX(16px);
+}
+.flx-accordion__button[aria-expanded=true]::after {
+  transform: rotate(135deg);
+}
+.flx-accordion__button:hover, .flx-accordion__button:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.flx-accordion__button::after {
+  display: inline-block;
+  flex-shrink: 0;
+  content: "";
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 2px solid #458EF7;
+  background-image: url("data:image/svg+xml,%3Csvg width=%2710px%27 height=%2710px%27 viewBox=%270 0 10 10%27 version=%271.1%27 xmlns=%27http://www.w3.org/2000/svg%27 xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3Ctitle%3Eicon-plus%3C/title%3E%3Cg id=%27Page-1%27 stroke=%27none%27 stroke-width=%271%27 fill=%27none%27 fill-rule=%27evenodd%27%3E%3Cg id=%27Test-assignment%27 transform=%27translate%28-1091.000000, -779.000000%29%27 fill=%27%23458EF7%27%3E%3Cg id=%27accordion%27 transform=%27translate%28248.000000, 133.000000%29%27%3E%3Cg id=%272%27 transform=%27translate%2864.000000, 619.000000%29%27%3E%3Cg id=%27icon%27 transform=%27translate%28768.000000, 16.000000%29%27%3E%3Cg id=%27expand%27 transform=%27translate%2811.000000, 11.000000%29%27%3E%3Cpath d=%27M9,6 L6,6 L6,6 L6,9 C6,9.55228475 5.55228475,10 5,10 C4.44771525,10 4,9.55228475 4,9 L4,6 L4,6 L1,6 C0.44771525,6 6.76353751e-17,5.55228475 0,5 C-6.76353751e-17,4.44771525 0.44771525,4 1,4 L4,4 L4,4 L4,1 C4,0.44771525 4.44771525,1.01453063e-16 5,0 C5.55228475,-1.01453063e-16 6,0.44771525 6,1 L6,4 L6,4 L9,4 C9.55228475,4 10,4.44771525 10,5 C10,5.55228475 9.55228475,6 9,6 Z%27 id=%27solid%27%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 11px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: transform 0.3s ease-in-out;
+}
+.flx-accordion__row {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -20px;
+}
+@media screen and (min-width: 769px) {
+  .flx-accordion__row {
+    flex-direction: row;
+  }
+}
+.flx-accordion__col {
+  padding: 0 20px;
+  flex: 1 1;
+}
+@media screen and (max-width: 769px) {
+  .flx-accordion__col + .flx-accordion__col {
+    margin-top: 16px;
+  }
+}
+.flx-accordion__body {
+  color: #3D5266;
+  font-size: 16px;
+  letter-spacing: 0.24px;
+  line-height: 1.6;
+  padding: 16px;
+}
+@media screen and (min-width: 769px) {
+  .flx-accordion__body {
+    padding: 32px;
+  }
+}
+.flx-accordion__body p {
+  margin: 0 0 16px 0;
+}
+.flx-accordion__body p:last-child {
+  margin-bottom: 0;
+}
+.flx-accordion__collapse {
+  height: 0;
+  transition: height 0.3s ease-in-out;
+}
+.flx-accordion__collapse.show {
+  transition: height 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

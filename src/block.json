@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/flx-accordion",
+  "version": "0.1.0",
+  "title": "Flx Accordion",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+	"html": false
+  },
+  "textdomain": "flx-accordion",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "keywords": [
+	"acc",
+	"toggle",
+	"list"
+  ],
+  "attributes": {
+	"title": {
+	  "type": "string"
+	},
+	"collapsed": {
+	  "type": "boolean",
+	  "default": true
+	},
+	"items": {
+	  "type": "array",
+	  "default": [
+		{
+		  "title": "",
+		  "content": "",
+		  "media": ""
+		}
+	  ]
+	}
+  }
+}

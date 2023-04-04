@@ -1,0 +1,14 @@
+@import "/src/assets/scss/utils";
+
+.flx-accordion-section {
+	padding: 30px;
+}
+
+.flx-accordion-body {
+	&__text {
+		border: 1px solid #949494;
+		padding: 6px 10px;
+		font-size: 14px;
+		min-height: 80px;
+	}
+}

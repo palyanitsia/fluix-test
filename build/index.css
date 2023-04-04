@@ -1,0 +1,155 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.pt-8 {
+  padding-top: 8px !important;
+}
+
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+
+.pb-8 {
+  padding-bottom: 8px !important;
+}
+
+.ml-8 {
+  margin-left: 8px !important;
+}
+
+.pl-8 {
+  padding-left: 8px !important;
+}
+
+.mr-8 {
+  margin-right: 8px !important;
+}
+
+.pr-8 {
+  padding-right: 8px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.pt-16 {
+  padding-top: 16px !important;
+}
+
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+
+.pb-16 {
+  padding-bottom: 16px !important;
+}
+
+.ml-16 {
+  margin-left: 16px !important;
+}
+
+.pl-16 {
+  padding-left: 16px !important;
+}
+
+.mr-16 {
+  margin-right: 16px !important;
+}
+
+.pr-16 {
+  padding-right: 16px !important;
+}
+
+.mt-32 {
+  margin-top: 32px !important;
+}
+
+.pt-32 {
+  padding-top: 32px !important;
+}
+
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+
+.pb-32 {
+  padding-bottom: 32px !important;
+}
+
+.ml-32 {
+  margin-left: 32px !important;
+}
+
+.pl-32 {
+  padding-left: 32px !important;
+}
+
+.mr-32 {
+  margin-right: 32px !important;
+}
+
+.pr-32 {
+  padding-right: 32px !important;
+}
+
+.mt-64 {
+  margin-top: 64px !important;
+}
+
+.pt-64 {
+  padding-top: 64px !important;
+}
+
+.mb-64 {
+  margin-bottom: 64px !important;
+}
+
+.pb-64 {
+  padding-bottom: 64px !important;
+}
+
+.ml-64 {
+  margin-left: 64px !important;
+}
+
+.pl-64 {
+  padding-left: 64px !important;
+}
+
+.mr-64 {
+  margin-right: 64px !important;
+}
+
+.pr-64 {
+  padding-right: 64px !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flx-accordion-section {
+  padding: 30px;
+}
+
+.flx-accordion-body__text {
+  border: 1px solid #949494;
+  padding: 6px 10px;
+  font-size: 14px;
+  min-height: 80px;
+}
+
+/*# sourceMappingURL=index.css.map*/
